@@ -28,7 +28,7 @@ class Jugador:
         movimientos = [0] * 9
         if self.esHumano:
             movimiento = int(input("Elija dónde poner su ficha: "))
-            while tablero.getCeldas()[movimiento] != ' ':
+            while tablero[movimiento] != ' ':
                 movimiento = int(input("Esa casilla está ocupada! Pruebe otra: "))
             movimientos[movimiento] = 1
         else:
